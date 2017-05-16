@@ -21,6 +21,7 @@ img{
   width: 100%;
 }
 .linha{
+  /* Display: flex -> faz com que os produtos se encaixem horizontalmente na linha*/
   display: flex;
 }
 
@@ -36,3 +37,10 @@ img{
   color: #257aed;
   text-align: center;
 }
+
+/* Media Query: permite a quebra de linha em resoluções menores com o display block - aqui definido 800px*/
+@media (max-width: 800px)
+{
+   .linha{
+    display: block;
+   }
